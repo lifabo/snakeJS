@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.png" type="image">
+  <title>Snake</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="">
+</head>
+
+<body>
+  <div class="contentContainer">
+    <div class="snakeContainer">
+      <div id="gameField"></div>
+      <div id="scores">
+        <div>
+          <img src='pics/food.png' class='food'>
+          <p id="score" class="scoreNumber"></p>
+        </div>
+
+        <div>
+          <button id="pauseButton" class="pauseButton" onclick="pauseButtonOnClick()"></button>
+        </div>
+
+        <div>
+          <img src="pics/highscore.png" class="food">
+          <p id="highscore" class="scoreNumber"></p>
+        </div>
+
+      </div>
+
+      <div class="sliderContainer">
+        <img src="pics/speed.png" class="food">
+        <input type="range" min="1" max="100" value="50" class="slider" id="speedSlider">
+      </div>
+    </div>
+
+    <div class="controlsContainer">
+      <div class="controlEntry">
+        <label for="keyControls">pause / resume</label>
+        <img src=" pics/p_key.png" id="keyControls" class="keyControls">
+      </div>
+
+      <div class="controlEntry">
+        <label for="keyControls">move left</label>
+        <img src=" pics/a_key.png" id="keyControls" class="keyControls">
+        <img src=" pics/arrow_left_key.png" id="keyControls" class="keyControls">
+      </div>
+
+      <div class="controlEntry">
+        <label for="keyControls">move right</label>
+        <img src=" pics/d_key.png" id="keyControls" class="keyControls">
+        <img src=" pics/arrow_right_key.png" id="keyControls" class="keyControls">
+      </div>
+
+      <div class="controlEntry">
+        <label for="keyControls">move up</label>
+        <img src=" pics/w_key.png" id="keyControls" class="keyControls">
+        <img src=" pics/arrow_up_key.png" id="keyControls" class="keyControls">
+      </div>
+
+      <div class="controlEntry">
+        <label for="keyControls">move down</label>
+        <img src=" pics/s_key.png" id="keyControls" class="keyControls">
+        <img src=" pics/arrow_down_key.png" id="keyControls" class="keyControls">
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./game.js"></script>
+</body>
+
+</html>

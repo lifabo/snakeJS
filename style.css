@@ -1,0 +1,142 @@
+:root {
+  --blockWidth: 40px;
+  --blockHeight: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /*font-family: "Segoe UI", "Calibri", sans-serif;*/
+}
+
+body {
+  background-color: #aad751;
+
+}
+
+.contentContainer {
+  display: flex;
+  width: max-content;
+  margin: 50px auto;
+}
+
+.snakeContainer {
+  width: max-content;
+  display: inline-block;
+}
+
+.controlsContainer {
+  display: inline-block;
+  margin-left: 80px;
+}
+
+#gameField {
+  border: #a4161a 0px solid;
+  border-radius: 10px;
+}
+
+#scores {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.scoreNumber {
+  width: 40px;
+  margin-left: 12px;
+  color: black;
+  font-family: "Century Gothic", Calibri, sans-serif;
+  font-size: 20px;
+}
+
+.fieldBlock {
+  width: var(--blockWidth);
+  height: var(--blockHeight);
+  background-color: #99d862;
+  border: #e01e37 1px solid;
+}
+
+.borderBlock {
+  width: var(--blockWidth);
+  height: var(--blockHeight);
+  background-color: #e01e37;
+}
+
+.snakeBody {
+  background-color: #DFFE08;
+}
+
+.snakeHead {
+  /*background-color: yellow;*/
+  width: calc(var(--blockWidth) - 0px);
+  height: var(--blockHeight);
+}
+
+.pauseButton {
+  box-sizing: border-box;
+  height: 44px;
+
+  background-color: transparent;
+  border-color: transparent transparent transparent #e01e37;
+  transition: 100ms all ease;
+  will-change: border-width;
+  cursor: pointer;
+
+  border-style: solid;
+  border-width: 22px 0 22px 40px;
+}
+
+.pauseButtonPaused {
+  border-style: double;
+  border-width: 0px 0 0px 40px;
+}
+
+.sliderContainer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+.slider {
+  width: 100%;
+  border-radius: 50px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+
+
+.rotate90 {
+  transform: rotate(90deg);
+}
+
+.rotate180 {
+  transform: rotate(180deg);
+}
+
+.rotate270 {
+  transform: rotate(270deg);
+}
+
+.food {
+  width: var(--blockWidth);
+  height: var(--blockHeight);
+}
+
+.keyControls {
+  width: var(--blockWidth);
+  height: var(--blockHeight);
+  display: inline;
+}
+
+.controlEntry {
+  display: flex;
+}
+
+.controlEntry label {
+  line-height: 40px;
+  margin-right: 20px;
+}

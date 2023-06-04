@@ -1,0 +1,15 @@
+done
+- using document.addEventListener instead of window.addEventListener
+
+
+
+todo
+- using unshift method to move snake body
+- spawn foood switch loop variable
+- verschiedene level (different speed/updateinterval) einbauen das man auf der webseite einstellen kann
+- highscore als cookie speichern
+
+
+changingdirection variable einbauen
+
+event listener else für game pauised und case f
